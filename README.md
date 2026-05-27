@@ -1,23 +1,26 @@
 # Agent EXO
 
-**Exoskeleton for AI agents** — a collection of plugins, skills, and tools that extend the capabilities of [OpenCode](https://opencode.ai) AI coding agents.
+**AI Agent Exoskeleton** — platform-agnostic plugins, skills, and tools that extend the capabilities of AI coding agents.
 
 > `EXO` stands for **Exoskeleton** — like an external shell that equips AI agents with superpowers: communication, context awareness, tool routing, and more.
+>
+>
+> [中文说明](README.zh-Hans.md)
 
 ## Packages
 
-| Package | Description | Status |
-|---------|-------------|--------|
-| [oc-tool-router](packages/oc-tool-router) | Smart subagent that analyzes conversation context and recommends relevant skills and MCP tools | Stable |
-| [oc-feishu-notifier](packages/oc-feishu-notifier) | Sends session events (completion, error, interruptions) to Feishu (Lark) webhook | Beta |
+| Package | Platform | Description | Status |
+|---------|----------|-------------|--------|
+| [oc-tool-router](packages/oc-tool-router) | OpenCode | Smart subagent that analyzes conversation context and recommends relevant skills and MCP tools | Stable |
+| [oc-feishu-notifier](packages/oc-feishu-notifier) | OpenCode | Sends session events (completion, error, interruptions) to Feishu (Lark) webhook | Beta |
 
 ## Installation
 
 ### Prerequisites
 
-- [OpenCode](https://opencode.ai) >= 1.0.0
 - Node.js >= 22
 - pnpm >= 10
+- [OpenCode](https://opencode.ai) 1.15.x
 
 ### Setup
 
@@ -29,10 +32,6 @@ cd agent-exo
 # Install dependencies
 pnpm install
 ```
-
-### Plugin Installation (per project)
-
-Each plugin is installed by placing its configuration in the target project's `.opencode/plugins/` directory. See individual package READMEs for details.
 
 ## Usage
 

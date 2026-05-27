@@ -20,12 +20,12 @@
     "@types/node": "^25.6.0"
   },
   "peerDependencies": {
-    "@opencode-ai/plugin": "^1.0.0"
+    "@opencode-ai/plugin": "1.15.x"
   },
   "peerDependenciesMeta": {
     "@opencode-ai/plugin": { "optional": true }
   },
   "engines": {
-    "opencode": ">=1.0.0"
+    "opencode": "1.15.x"
   }
 }

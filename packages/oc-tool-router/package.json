@@ -1,0 +1,38 @@
+{
+  "name": "@agent-exo/oc-tool-router",
+  "version": "1.0.0",
+  "description": "OpenCode plugin: subagent analyzes context and recommends relevant skills and MCP tools",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cc01cc/agent-exo.git",
+    "directory": "packages/oc-tool-router"
+  },
+  "homepage": "https://github.com/cc01cc/agent-exo/tree/main/packages/oc-tool-router",
+  "bugs": {
+    "url": "https://github.com/cc01cc/agent-exo/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "main": "src/index.ts",
+  "dependencies": {
+    "ai": "^4.3.0",
+    "@ai-sdk/openai-compatible": "^0.2.0",
+    "@modelcontextprotocol/sdk": "^1.29.0"
+  },
+  "peerDependencies": {
+    "@opencode-ai/plugin": "^1.0.0"
+  },
+  "peerDependenciesMeta": {
+    "@opencode-ai/plugin": {
+      "optional": true
+    }
+  },
+  "engines": {
+    "opencode": ">=1.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^25.9.1"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "name": "agent-exo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Exoskeleton for AI agents — plugins, skills, and tools that extend AI coding agent capabilities",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cc01cc/agent-exo.git"
+  },
+  "homepage": "https://github.com/cc01cc/agent-exo",
+  "bugs": {
+    "url": "https://github.com/cc01cc/agent-exo/issues"
+  },
+  "scripts": {
+    "lint": "pnpm run lint:oxlint && pnpm run typecheck",
+    "lint:oxlint": "oxlint -c .oxlintrc.json .",
+    "test": "pnpm -r test",
+    "typecheck": "tsc --noEmit -p packages/oc-tool-router && tsc --noEmit -p packages/oc-feishu-notifier"
+  },
+  "devDependencies": {
+    "@types/node": "^25.6.0",
+    "oxlint": "^1.63.0",
+    "oxlint-tsgolint": "^0.22.0",
+    "typescript": "^6.0.3",
+    "vitest": "^4.1.5"
+  },
+  "engines": {
+    "pnpm": ">=10",
+    "node": ">=18"
+  }
+}

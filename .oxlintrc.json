@@ -1,0 +1,14 @@
+{
+  "$schema": "https://raw.githubusercontent.com/oxc-project/oxc/refs/heads/master/crates/oxc_linter/source/oxlintrc.schema.json",
+  "plugins": ["eslint", "typescript", "unicorn", "oxc"],
+  "env": { "node": true },
+  "rules": {
+    "no-console": "warn",
+    "no-debugger": "error",
+    "no-var": "error",
+    "typescript/no-explicit-any": "warn",
+    "typescript/no-unused-vars": "warn",
+    "max-lines-per-function": ["warn", { "max": 200 }],
+    "max-params": ["warn", { "max": 5 }]
+  }
+}

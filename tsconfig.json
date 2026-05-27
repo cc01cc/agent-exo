@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "strict": true,
+    "skipLibCheck": true
+  },
+  "include": ["packages/*/src/**/*.ts"],
+  "references": [
+    { "path": "packages/oc-tool-router" },
+    { "path": "packages/oc-feishu-notifier" }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "enabled": true,
+  "subagentModel": "deepseek-chat",
+  "subagentApiKey": "your-api-key-here",
+  "subagentBaseURL": "https://api.deepseek.com/v1",
+  "minIntervalMs": 3000
+}
